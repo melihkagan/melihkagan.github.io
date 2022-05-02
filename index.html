@@ -87,13 +87,17 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper1 = new Swiper(".mySwiper", {
         direction: "vertical",
+        mousewheel: true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
       });
+      function go_to_slide(index) {
+        swiper1.slideTo(index, 500)
+    }
     </script>
   </body>
 </html>
